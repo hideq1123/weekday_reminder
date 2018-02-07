@@ -1,29 +1,29 @@
-�g����
+使い方
 
-�t�@�C�����̕ύX�ӏ��́uWrite here�v�Ƃ����L�[���[�h�őS��������������Ƃ����g�Őݒ肷��Ƃ���(�p�X���[�h�Ƃ�)���o�Ă���̂ŁA�����g�̊��ɍ��������̂ɕύX���Ă��������B
+ファイル中の変更箇所は「Write here」というキーワードで全文検索をかけるとご自身で設定するところ(パスワードとか)が出てくるので、ご自身の環境に合ったものに変更してください。
 
-�K�v��PEAR���C�u�����[�́A
+必要なPEARライブラリーは、
 Config
 HTML_Common
-HTML_QuickForm(HTML_QuickForm2�ł͂Ȃ����Ƃɒ���)
-Mail(Mail2�ł͂Ȃ����Ƃɒ���)
+HTML_QuickForm(HTML_QuickForm2ではないことに注意)
+Mail(Mail2ではないことに注意)
 Mail_Mime
 Mail_mimeDecode
-MIME_Type(��L�Ɠ����C���X�g�[��)
-Net_SMTP(Net_Socket�������ɃC���X�g�[�������)
+MIME_Type(上記と同時インストール)
+Net_SMTP(Net_Socketが同時にインストールされる)
 Pager
-�ł��B
+です。
 
-businessday.sql���f�[�^�x�[�X�ɃC���|�[�g���Ă��������B
+businessday.sqlをデータベースにインポートしてください。
 
-session.auto_start��On�ɂ��Ă��������B
-PHP�̃o�[�W������5.5��������5.6�œ����܂��B7���Ɠ����܂���B
+session.auto_startはOnにしてください。
+PHPのバージョンは5.5もしくは5.6で動きます。7だと動きません。
 
-cron�̐ݒ�ɂ���
-ScheController.php�͖���59���ɓ���
-MoveSche.php�͖���0�����x�ɓ���
-SendMail.php��1�����ɓ���
+cronの設定について
+ScheController.phpは毎時59分に動かす
+MoveSche.phpは毎時0分丁度に動かす
+SendMail.phpは1分毎に動かす
 
-����web�T�[�r�X�̊����ł�
+このwebサービスの完成版は
 http://mossgreen.main.jp/weekday/
 
